@@ -1,1 +1,37 @@
 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://raw.githubusercontent.com/becutandavid/FOAF/main/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/becutandavid/FOAF/main/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/becutandavid/FOAF/main/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/becutandavid/FOAF/main/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "David Galevski" ;
+  foaf:title "Mr" ;
+  foaf:givenname "David" ;
+  foaf:family_name "Galevski" ;
+  foaf:nick "Becu" ;
+  foaf:mbox_sha1sum "12f069550a7e3be3198b8331a8ab7e7fe548edf0" ;
+  foaf:schoolHomepage <https://www.finki.ukim.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Viktor Avramovski" ;
+    foaf:mbox_sha1sum "1cf83be00cb5e48f123aeb3ad804787e1204533b" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/vavramovski/foaf/main/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Jana Nikolovska" ;
+    foaf:mbox_sha1sum "4fdd4dd16f1bea78c19806b66eabec43eb123314" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/jananikolovska/WBS/main/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Andrej Milovanovic" ;
+    foaf:mbox_sha1sum "fe8c264a33c423c690cda35dd0b8b43061764346" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/amilovanovikj/FOAF/master/foaf.ttl>
+  ] .
